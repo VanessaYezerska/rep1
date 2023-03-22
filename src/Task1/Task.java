@@ -66,46 +66,34 @@ package Task1;
         System.out.println("Найбільше число-" +  max);
     }
 }
-
-
-//Task3
-     class Task6{
+ class task6 {
     public static void main(String[] args) {
-        int floor = 6;
-        int y = 2;
-        if (y > floor) {
-            if (y == 2) {
-                System.out.println("ліфт підіймається на 3 поверх");
-            } else {
-                System.out.println("ліфт підіймається на" + y + "поверх");
-            }
-        }     else if(y < floor){
-            if(y == 2){
-                System.out.println("ліфт спускається на 1 поверх");
-            }
-            else{
-                System.out.println("ліфт спускається на"+y+"поверх");
-            }
-        }
-        else{
+
+        int y = 2;// поверх, на якому ми знаходимось
+        int v = 7;// поверх, який нам потрібен
+
+        if (v == y) {
             System.out.println("Ви вже знаходитесь на цьому поверсі");
-
         }
 
+        if (v > y) {
+            if (v == 2) {
+                System.out.println("Ліфт підіймається на 3 поверх");
+            } else {
+                System.out.println("Ліфт підіймається на " + v + " поверх");
+            }
+        } else if (v < y) {
+            if (v == 2) {
+                System.out.println("Ліфт спускається на 1 поверх");
+            } else {
+                System.out.println("Ліфт спускається на " + v + " поверх");
+            }
+
+
+        }
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 class Task7{
